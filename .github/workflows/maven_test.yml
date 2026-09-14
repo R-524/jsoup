@@ -25,4 +25,4 @@ jobs:
         run: mvn test-compile --batch-mode --quiet
 
       - name: Run tests with Maven
-        run: mvn test --batch-mode --quiet
+        run: mvn test --batch-mode -Dorg.slf4j.simpleLogger.defaultLogLevel=warn
